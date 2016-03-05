@@ -57,7 +57,7 @@ traceback2 to backport modułu traceback do starszych wersji Pythona.
 Moduł traceback służy do wypisywania i odtwarzania śladu wywołań ze
 stosu.
 
-W Pythonei 2.x, w przeciwieństwie do modułu traceback, moduł
+W Pythonie 2.x, w przeciwieństwie do modułu traceback, moduł
 traceback2 tworzy wyjście w unikodzie (ponieważ zależy od modułu
 linecache2).
 

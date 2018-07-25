@@ -40,7 +40,6 @@ BuildRequires:	python3-unittest2
 %endif
 %endif
 BuildRequires:	rpmbuild(macros) >= 1.714
-Requires:	python-linecache2
 Requires:	python-modules >= 1:2.6
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -67,7 +66,6 @@ linecache2).
 Summary:	Backport of traceback to older supported Pythons
 Summary(pl.UTF-8):	Backport modułu traceback do starszych wersji Pythona
 Group:		Development/Languages/Python
-Requires:	python3-linecache2
 Requires:	python3-modules >= 1:3.2
 
 %description -n python3-traceback2

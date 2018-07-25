@@ -1,5 +1,7 @@
 # NOTE: traceback is a part of standard library since 2.?/3.?
 #       however, traceback2 supports unicode on python2
+#       traceback2 1.4.0 is backport of traceback between 3.4.0/3.5.0
+#       traceback from cpython>=3.5.0 is more robust
 #
 # Conditional build:
 %bcond_without	python2	# CPython 2.x module
@@ -13,8 +15,8 @@ Version:	1.4.0
 Release:	1
 License:	PSF
 Group:		Development/Languages/Python
-#Source0Download: https://pypi.python.org/pypi/traceback2
-Source0:	https://pypi.python.org/packages/source/t/traceback2/traceback2-%{version}.tar.gz
+#Source0Download: https://pypi.org/simple/traceback2
+Source0:	https://files.pythonhosted.org/packages/source/t/traceback2/traceback2-%{version}.tar.gz
 # Source0-md5:	9e9723f4d70bfc6308fa992dd193c400
 URL:		https://github.com/testing-cabal/traceback2
 %if %{with python2}
@@ -37,7 +39,7 @@ BuildRequires:	python3-testtools
 BuildRequires:	python3-unittest2
 %endif
 %endif
-BuildRequires:	rpmbuild(macros) >= 1.710
+BuildRequires:	rpmbuild(macros) >= 1.714
 Requires:	python-linecache2
 Requires:	python-modules >= 1:2.6
 BuildArch:	noarch

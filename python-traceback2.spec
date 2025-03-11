@@ -12,7 +12,7 @@ Summary:	Backport of traceback to older supported Pythons
 Summary(pl.UTF-8):	Backport modułu traceback do starszych wersji Pythona
 Name:		python-traceback2
 Version:	1.4.0
-Release:	7
+Release:	8
 License:	PSF
 Group:		Development/Languages/Python
 #Source0Download: https://pypi.org/simple/traceback2
